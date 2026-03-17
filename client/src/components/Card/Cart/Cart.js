@@ -43,7 +43,7 @@ const Cart = () => {
                 amount: cartItems.totalAmount
             }
 
-        await axios.post("http://localhost:5000/api/payment", config)
+        await axios.post("https://mern-ecommerce-seven.vercel.app/api/payment", config)
             .then((res) => {
                     console.log(res.data)
                     window.location.replace(res.data)
